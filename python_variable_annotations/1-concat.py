@@ -5,7 +5,7 @@
 """
 
 
-def add(str1: str, str2: str) -> str:
+def concat(str1: str, str2: str) -> str:
     """
         Returns a str concat of str1 + str2
     """
