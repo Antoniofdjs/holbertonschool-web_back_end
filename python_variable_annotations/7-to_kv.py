@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""
-    Write a type-annotated function to_kv that takes a string k and
-    an int OR float v as arguments and returns a tuple.
-    The first element of the tuple is the string k.
-    The second element is the square of the int/float v and
-    should be annotated as a float.
-"""
-from typing import Union
+'''
+    Function to_kv with arguments k: str, v: Union[int, float]
+    that returns a tuple containing k and the square of v
+
+    k: str
+    v: Union[int, float]
+
+    return: tuple containing k and the square of v
+'''
+from typing import Union, Tuple
 
 
-def to_kv(k: str, v: Union[float, int]) -> tuple[str, float]:
-    """
-        Takes a string 'k' and int/float 'v'
-        Returns tuple (k: str, sqr(v): float)
-    """
+# type-annotated function
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    '''
+        Returns a tuple containing k and the square of v
 
-    return (str(k), float(v ** 2))
+        k: str
+        v: Union[int, float]
+
+        return: tuple containing k and the square of v
+    '''
+    return (k, v * v)
