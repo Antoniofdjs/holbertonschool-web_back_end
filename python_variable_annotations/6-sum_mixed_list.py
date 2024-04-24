@@ -5,9 +5,10 @@
 """
 
 from typing import Union
+from typing import List
 
 
-def sum_mixed_list(mxd_list: list[Union[int, float]]) -> float:
+def sum_mixed_list(mxd_list: List[Union[int, float]]) -> float:
     """
         Makes the sum of the 'mxd_list' and returns it as float
     """

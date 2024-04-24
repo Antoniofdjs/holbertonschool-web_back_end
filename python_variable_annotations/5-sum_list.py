@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 '''
     Function sum_list that takes a list input_list of
@@ -7,7 +6,7 @@
 from typing import List
 
 
-def sum_list(input_list: List[float]) -> float:  # type-annotated function
+def sum_list(input_list: List[float]) -> float:
     '''
         Returns the sum of a list of floats
 
@@ -16,4 +15,3 @@ def sum_list(input_list: List[float]) -> float:  # type-annotated function
         return: sum of input_list
     '''
     return sum(input_list)
-
