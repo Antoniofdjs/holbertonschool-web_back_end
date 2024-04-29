@@ -1,13 +1,2 @@
-#!/bin/bash
-
-# Check if database name is provided as command-line argument
-if [ $# -lt 1 ]; then
-    echo "Usage: $0 <databaseName>"
-    exit 1
-fi
-
-dbName="$1"
-
-# Generate MongoDB commands to insert a document into the 'school' collection
-echo "use $dbName"
-echo "db.school.insertOne({ name: 'Holberton school' })"
+// Insert into collection
+db.school.insertOne({name: "Holberton school"})
