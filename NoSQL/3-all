@@ -1,14 +1,2 @@
-# !/bin/bash
-
-# Check if database name and collection name are provided as command-line arguments
-if [ $# -lt 2 ]; then
-    echo "Usage: $0 <databaseName> <collectionName>"
-    exit 1
-fi
-
-dbName="$1"
-collectionName="$2"
-
-# Generate MongoDB command to perform find() operation on the specified collection
-echo "use $dbName"
-echo "db.$collectionName.find()"
+// Script that lists all documents in the collection school
+db.school.find()
