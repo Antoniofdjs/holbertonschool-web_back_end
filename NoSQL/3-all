@@ -1,0 +1,2 @@
+// View all documents of collection
+db.my_db.find()
