@@ -84,9 +84,9 @@ class Server:
 
         # Previous page
         if hyper_dict['page'] == 1:
-            previous_page = None
+            prev_page = None
         else:
-            previous_page = hyper_dict['page'] - 1
-        hyper_dict['previous_page'] = previous_page
+            prev_page = hyper_dict['page'] - 1
+        hyper_dict['prev_page'] = prev_page
 
         return hyper_dict
