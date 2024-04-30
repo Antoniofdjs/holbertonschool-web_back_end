@@ -61,6 +61,11 @@ class Server:
         '''
             Hyper media return
         '''
+
+        # Assert that both page and page_size are integers greater than 0
+        assert type(page) == int and type(page_size) == int
+        assert page > 0 and page_size > 0
+
         hyper_dict = {}
 
         # Round up pages like 2.3; You need another page to present remainer
