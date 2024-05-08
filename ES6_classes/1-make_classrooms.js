@@ -1,4 +1,4 @@
-import ClassRoom from "./0-classroom";
+import ClassRoom from './0-classroom';
 
 const initializeRooms = () => [
   new ClassRoom(19),
